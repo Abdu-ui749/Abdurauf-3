@@ -1,9 +1,9 @@
-const image = document.createElement('img');
+const activeImage = document.getElementById(img);
 image.src = "./MainAfter.jpg";
-document.body.appendChild(image)
+document.body.appendChild(img);
   document.image.forEach( image => {
    image.addeventListener('click', () => {
-       removeActiveClasses();
+       removeActiveClasses(image);
        image.add('active');
    })
 });
