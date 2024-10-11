@@ -1,14 +1,11 @@
-const activeImage = document.getElementById(img);
-image.src = "./MainAfter.jpg";
-document.body.appendChild(img);
-  document.image.forEach( image => {
-   image.addeventListener('click', () => {
-       removeActiveClasses(image);
-       image.add('active');
-   })
-});
+const active = document.querySelectorAll(images => {
+    images.addEventListener('click', () => {
+        removeActiveClasses()
+        images.classList.add('active')
+    })
+})
 function removeActiveClasses() {
-     image.forEach(image => {
-      image.remove('active')
-   })
+    images.forEach(image => {
+        image.classList.remove('active')
+    })
 }
