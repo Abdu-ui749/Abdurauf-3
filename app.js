@@ -1,11 +1,9 @@
-const active = document.querySelectorAll(images => {
-    images.addEventListener('click', () => {
-        removeActiveClasses()
-        images.classList.add('active')
-    })
-})
-function removeActiveClasses() {
-    images.forEach(image => {
-        image.classList.remove('active')
-    })
-}
+ let image = document.getElementById("img");
+ img.oneclick = function() {
+    img.src = "MainBefore.jpg";
+    img.classList.add("active");
+ }
+ img.oneclick = function() {
+    img.src = "MainBefore.jpg";
+    img.classList.remove("active");
+ }
